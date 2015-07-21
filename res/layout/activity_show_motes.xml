@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayout02"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:background="@drawable/fondo_meshlium"
+	android:orientation="vertical">
+   <!-- 
+  <ListView 
+       android:layout_width="wrap_content"   
+	    android:layout_height="wrap_content"       
+ 	    android:id="@+id/mainListView">  
+  </ListView>  
+  -->
+       <ImageButton
+         android:id="@+id/refresh_button"
+         style="@style/Custom.ImageButton"
+         android:contentDescription="@string/connect_picture"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:paddingRight="10dp"
+         android:paddingTop="10dp"
+         android:layout_gravity="right"
+         android:scaleType="fitXY"
+         android:background="@null"
+         android:src="@drawable/refreshxml"/>  
+         
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/gridview"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:columnWidth="90dp"
+	    android:numColumns="2"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:paddingBottom="35dp"
+	    android:listSelector="#00000000"
+	    android:gravity="center" /> 
+	    
+    <TextView android:id="@+id/lista_motes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"    
+        android:maxLines = "30"
+		android:scrollbars = "vertical"  
+		android:textStyle="bold"
+        tools:context=".ShowMotes" />
+
+</LinearLayout>
+
