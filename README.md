@@ -1,3 +1,3 @@
 # MotesClient
 
-App for an Android Phone to manage a network of WaspMotes
+aApp for an Android Phone to manage a network of WaspMotes
